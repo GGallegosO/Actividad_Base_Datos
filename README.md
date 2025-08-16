@@ -11,12 +11,13 @@ _Este comando nos permite ver todas las bases de datos en el servidor._
 
 ```sql
 SHOW DATABASES;
-
+```
 ### Comando: `USE world;`
 _Seleccionamos la base de datos `world` para poder trabajar con sus tablas._
 
 ```sql
 USE world;
+```
 
 ### Comando: `SHOW TABLES;`
 _Verificamos que las tablas `city`, `country` y `countrylanguage` hayan sido importadas correctamente._
@@ -25,3 +26,4 @@ _Verificamos que las tablas `city`, `country` y `countrylanguage` hayan sido imp
 
 ```sql
 SHOW TABLES;
+```
