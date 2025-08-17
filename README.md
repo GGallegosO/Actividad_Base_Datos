@@ -13,7 +13,7 @@ _Este comando nos permite ver todas las bases de datos en el servidor._
 SHOW DATABASES;
 ```
 
-![Resultado de SHOW DATABASES](screenshots/show_databases.png)
+![Resultado de SHOW DATABASES](screenshots/show_databases.jpg)
 
 ---
 
@@ -32,7 +32,7 @@ _Verificamos que las tablas `city`, `country` y `countrylanguage` hayan sido imp
 SHOW TABLES;
 ```
 
-![Resultado de SHOW TABLES](screenshots/show_tables.png)
+![Resultado de SHOW TABLES](screenshots/show_tables.jpg)
 
 ---
 
@@ -45,7 +45,7 @@ _Este comando recupera toda la información de la tabla de ciudades._
 SELECT * FROM city;
 ```
 
-![Resultado de la consulta SELECT * FROM city](screenshots/select_all_cities.png)
+![Resultado de la consulta SELECT * FROM city](screenshots/select_all_cities.jpg)
 
 
 ---
@@ -57,7 +57,7 @@ _Este comando recupera los **atributos** de **nombre** y **población** de todas
 SELECT name, Population FROM city;
 ```
 
-![Resultado de la consulta de nombre y población de ciudades](screenshots/select_name_population_city.png)
+![Resultado de la consulta de nombre y población de ciudades](screenshots/select_name_population_city.jpg)
 
 ---
 
@@ -71,7 +71,7 @@ ORDER BY population DESC
 LIMIT 10;
 ```
 
-![Resultado de la consulta de las 10 ciudades más pobladas](screenshots/top_10_cities.png)
+![Resultado de la consulta de las 10 ciudades más pobladas](screenshots/top_10_cities.jpg)
 
 ---
 
@@ -84,7 +84,7 @@ FROM city
 LIMIT 10;
 ```
 
-![Resultado de la consulta con alias](screenshots/select_alias.png)
+![Resultado de la consulta con alias](screenshots/select_alias.jpg)
 
 
 ---
@@ -99,7 +99,7 @@ WHERE Population > 7000000
 ORDER BY Population DESC;
 ```
 
-![Resultado de la consulta de ciudades con población mayor a 7 millones](screenshots/cities_over_7_million.png)
+![Resultado de la consulta de ciudades con población mayor a 7 millones](screenshots/cities_over_7_million.jpg)
 
 ---
 
@@ -113,7 +113,7 @@ WHERE Population >= 170000 AND Population <180000
 ORDER BY Population DESC;
 ```
 
-![Resultado de la consulta de ciudades entre 170k y 180k habitantes](screenshots/cities_170k_180k.png)
+![Resultado de la consulta de ciudades entre 170k y 180k habitantes](screenshots/cities_170k_180k.jpg)
 
 ---
 
@@ -127,7 +127,7 @@ WHERE CountryCode = 'CHL' OR CountryCode = 'ARG'
 ORDER BY Population ASC;
 ```
 
-![Resultado de la consulta de ciudades en Chile o Argentina](screenshots/cities_chl_arg.png)
+![Resultado de la consulta de ciudades en Chile o Argentina](screenshots/cities_chl_arg.jpg)
 
 ---
 
@@ -140,7 +140,7 @@ FROM country
 WHERE capital IS null;
 ```
 
-![Resultado de la consulta de países sin capital](screenshots/countries_without_capital.png)
+![Resultado de la consulta de países sin capital](screenshots/countries_without_capital.jpg)
 
 ---
 
@@ -153,7 +153,7 @@ FROM country co INNER JOIN city ci ON co.code = ci.countrycode
 WHERE co.name ='Chile' or co.name ='Bolivia';
 ```
 
-![Resultado de la unión de tablas para Chile y Bolivia](screenshots/join_chile_bolivia.png)
+![Resultado de la unión de tablas para Chile y Bolivia](screenshots/join_chile_bolivia.jpg)
 
 
 ---
@@ -169,7 +169,7 @@ WHERE co.region = 'South America'
 ORDER BY co.name ASC, percentage DESC;
 ```
 
-![Resultado de la consulta de idiomas de Sudamérica](screenshots/south_america_languages.png)
+![Resultado de la consulta de idiomas de Sudamérica](screenshots/south_america_languages.jpg)
 
 ---
 
@@ -184,7 +184,7 @@ co.indepyear IS NOT NULL
 ORDER BY co.indepyear ASC;
 ```
 
-![Resultado de la consulta de años de independencia](screenshots/independence_years.png)
+![Resultado de la consulta de años de independencia](screenshots/independence_years.jpg)
 
 ---
 
@@ -198,7 +198,7 @@ GROUP BY co.region
 ORDER BY 1 ASC;
 ```
 
-![Resultado de la población total por región](screenshots/region_population_sum.png)
+![Resultado de la población total por región](screenshots/region_population_sum.jpg)
 
 ---
 
@@ -213,5 +213,5 @@ GROUP BY co.region
 ORDER BY 1 ASC;
 ```
 
-![Resultado de la suma de población de ciudades por región](screenshots/total_city_population_by_region.png)
+![Resultado de la suma de población de ciudades por región](screenshots/total_city_population_by_region.jpg)
 
